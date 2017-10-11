@@ -13,11 +13,11 @@ open class Application {
 @RestController
 class HelloSpringBootController {
 
-    @RequestMapping(value = "/")
-    fun helloSpringBoot() = 1255000.0 / 4400000.0
+	@RequestMapping(value = "/")
+	fun helloSpringBoot() = Share(part = 1122000, total = 4400000).toString()
 
 }
 
 fun main(args: Array<String>) {
-    SpringApplication.run(Application::class.java, *args)
+	SpringApplication.run(Application::class.java, *args)
 }
